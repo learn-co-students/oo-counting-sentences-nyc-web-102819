@@ -14,9 +14,12 @@ class String
   def exclamation?
     self.end_with?("!")
   end
-
   def count_sentences
-    self.split(/[?!.]/).delete_if {|w| w.size < 2}.size
+    self.split(/[?!.]/).delete_if {|w| w.size < 2}.length
 
   end
+  binding.pry
+  
 end
+
+"kthxbye"
